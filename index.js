@@ -4,7 +4,10 @@ module.exports = parse
 
 function parse (http, dat) {
   // skip if nothing
-  if (!http) return ''
+  if (!http && !dat) return ''
+
+  // missing http
+  if (!http && dat) http = dat
 
   // deconstruct object
   if (typeof http === 'object') {
