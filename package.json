@@ -1,0 +1,26 @@
+{
+  "name": "dat-href",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && ava test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jondashkyle/dat-href.git"
+  },
+  "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jondashkyle/dat-href/issues"
+  },
+  "homepage": "https://github.com/jondashkyle/dat-href#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "url-parse": "^1.3.0"
+  }
+}
