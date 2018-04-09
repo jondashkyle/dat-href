@@ -11,8 +11,9 @@ function parse (http, dat) {
 
   // deconstruct object
   if (typeof http === 'object') {
+    if (!http.http && !http.dat) return ''
     dat = http.dat
-    http = http.http
+    http = http.http || http.dat
   }
 
   // single argument or swap

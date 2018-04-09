@@ -24,12 +24,14 @@ href({
 })
 ```
 
-Want to simply replace `http` or `dat`? Just pass a single `http` or `dat` url, and depending upon the environment the protocol will be modified. This is useful if the site is configured with `.well-known/dat` to verify ownership of the domain.
+Say you’re linking to a site which is available over `http` and `dat` using the `.well-known/dat` method. All you need to do is provide a single url to the site and it’ll swap the protocol for you.
 
 ```js
 href('https://enoki.site')
 href('dat://enoki.site')
 ```
+
+Sometimes when working with a cms you’ll have `http` and `dat` keys 
 
 ## Testing
 
